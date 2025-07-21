@@ -9,9 +9,15 @@ A Telegram-powered bot that scrapes Argos UK for bargains, filters them using a 
 
 ## 🔧 Setup
 1. Create a Telegram bot via @BotFather and get your API token.
-2. Replace `YOUR_TELEGRAM_BOT_TOKEN` in `telegram_bot.py`
+2. Create a `.env` file in the root folder:
+   ```
+   TELEGRAM_BOT_TOKEN=your_token_here
+   ```
 3. Install dependencies: `pip install -r requirements.txt`
-4. Run the bot: `python alert_system/telegram_bot.py`
+4. Run the bot from the root folder:
+   ```bash
+   python -m alert_system.telegram_bot
+   ```
 
 ## 📌 Coming soon
 - Amazon UK scraping
